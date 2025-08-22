@@ -1,11 +1,11 @@
-import tkinter as tkinter 
+import tkinter as tk 
 from tkinter import messagebox
-def imc_calc():
+def calcular_imc():
     try:
         peso = float(entry_peso.get())
         altura = float(entry_altura.get())
         imc = peso /(altura*altura)
-        messagebox.showinfo("Resultdo",f"seu IMC é{imc:.2f}")
+        messagebox.showinfo("Resultado", f"Seu IMC é {imc:.2f}")
     except ValueError:
         messagebox.showinfo("Erro", "Por Favor insira numeros válidos")
 
